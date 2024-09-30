@@ -7,19 +7,27 @@
     <packaging>pom</packaging>
     <name>gameoflife</name>
     <url>https://github.com/wakaleo/game-of-life</url>
-    <properties>
-        <build.number>SNAPSHOT</build.number>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <easyb.version>1.4</easyb.version>
-        <cobertura.version>2.6</cobertura.version>
-        <!-- A workaround for a bug in PMD -->
-        <sourceJdk>1.8</sourceJdk>
-        <targetJdk>1.8</targetJdk>
-        <github.account>wakaleo</github.account>
-        <thucydides.version>1.8.4</thucydides.version>
-        <jelastic.context>gameoflife</jelastic.context>
-        <jelastic.environment>wakaleo</jelastic.environment>
-    </properties>
+   <properties>
+    <build.number>SNAPSHOT</build.number>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <easyb.version>1.4</easyb.version>
+    <cobertura.version>2.6</cobertura.version>
+    <!-- A workaround for a bug in PMD -->
+    <sourceJdk>1.8</sourceJdk>
+    <targetJdk>1.8</targetJdk>
+    <github.account>wakaleo</github.account>
+    <thucydides.version>1.8.4</thucydides.version>
+    <jelastic.context>gameoflife</jelastic.context>
+    <jelastic.environment>wakaleo</jelastic.environment>
+    
+    <!-- Hardcoded username and password (Security issue) -->
+    <jelastic.username>admin</jelastic.username>
+    <jelastic.password>password123</jelastic.password>
+
+    <!-- Unused property (Maintainability issue) -->
+    <unused.property>ThisIsUnused</unused.property>
+</properties>
+
 
     <scm>
         <connection>scm:git:git@github.com:${github.account}/game-of-life.git</connection>
